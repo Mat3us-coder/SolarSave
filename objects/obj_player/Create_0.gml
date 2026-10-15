@@ -4,7 +4,7 @@ hp_total = hp;
 damage = 1;
 facing = 0;
 atk_range = 0.5;
-atk_speed = 15;
+atk_speed = 40;
 
 
 dash_speed = 12;
@@ -14,7 +14,7 @@ iframes = false;
 level = 1;
 xp = 0;
 xp_require = 100;
-gold = 0;
+gold = 100000;
 
 function add_xp(_xp_to_add){
 
