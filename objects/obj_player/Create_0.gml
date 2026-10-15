@@ -14,7 +14,14 @@ iframes = false;
 level = 1;
 xp = 0;
 xp_require = 100;
-gold = 100000;
+gold = 0;
+
+monstros_matados = 0;
+ervas_coletadas = 0;
+caminho_liberado_monstros = 0;
+cristais = 0;
+
+action = false;
 
 function add_xp(_xp_to_add){
 
@@ -32,3 +39,33 @@ function add_xp(_xp_to_add){
 
 
 tilemap= layer_tilemap_get_id("Tiles_Col");
+
+
+
+
+//cutscene inicial
+
+if (!instance_exists(obj_dialog)) {
+            create_dialog([
+                {
+                    name: "Protagonista",
+                    msg: "..."
+                },
+                {
+                    name: "Protagonista",
+                    msg: "Meu irmão... Preciso Salvá-lo!"
+                },
+                {
+                    name: "Protagonista",
+                    msg: "Ouvi de um ancião que a cura para esta doença são por meio dos 4 cristais mágicos."
+                },
+                {
+                    name: "Protagonista",
+                   msg: "Será que alguem dá vila sabe sobre esses cristais mágicos?"
+                },
+				 {
+                    name: "Protagonista",
+                    msg: "Seja forte, irmão!"
+                }
+            ]);
+}
