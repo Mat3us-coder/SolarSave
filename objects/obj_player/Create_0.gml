@@ -3,6 +3,9 @@ hp = 10;
 hp_total = hp;
 damage = 1;
 facing = 0;
+atk_range = 0.5;
+atk_speed = 15;
+
 
 dash_speed = 12;
 max_speed= 2;
