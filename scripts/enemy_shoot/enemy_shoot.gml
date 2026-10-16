@@ -3,7 +3,7 @@ function enemy_shoot(){
 		var _bullet = instance_create_depth(x,y, depth, obj_bullet);
 	
 		_bullet.direction = point_direction(x,y,obj_player.x, obj_player.y);
-		_bullet.speed= 2;
+		_bullet.speed= 1;
 		
 	alarm[2] = 120;
 	}

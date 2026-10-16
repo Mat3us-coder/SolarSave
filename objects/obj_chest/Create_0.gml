@@ -1,2 +1,2 @@
 itsOpen= false;
-loot_list = [10, 20, 30];
+loot_list = [1000, 700, 3000];
